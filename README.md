@@ -89,7 +89,7 @@ The overall structure of AgroBot is shown below:
 
 ## 🧪 Visualizations
 
-### ✅ Confusion Matrix
+### ✅ Confusion Matrix on Test Data
 ![Confusion Matrix](images/confusion_matrix.png)
 
 ### 📈 Training and Validation Curves
