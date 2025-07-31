@@ -53,13 +53,6 @@ The overall structure of AgroBot is shown below:
 
 ---
 
-### 🔌 Circuit Diagram
-Circuit connecting Raspberry Pi, IR sensor, motor drivers, sprayer pump, and camera:
-
-![Circuit Diagram](images/circuit_diagram.png)
-
----
-
 ## ⚙️ Hardware Components
 
 - Raspberry Pi 4 Model B
