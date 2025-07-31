@@ -18,7 +18,7 @@ This repository contains the code, model, and design for a Raspberry Pi–based 
 4. Checks green pixel ratio to identify valid leaf areas.
 5. Each valid patch is passed to a CNN for disease classification.
 6. Most frequent class is selected as the dominant disease.
-7. Based on the mapped cause (bacterial/fungal/viral), the sprayer activates.
+7. Based on the mapped cause (bacterial/fungal/viral), the sprayer activates if the mapped cause is the set cause (see settings.py).
 8. The robot resumes motion to the next plant.
 
 ---
