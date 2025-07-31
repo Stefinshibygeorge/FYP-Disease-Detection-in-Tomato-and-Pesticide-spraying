@@ -93,7 +93,7 @@ The overall structure of AgroBot is shown below:
 ![Confusion Matrix](images/confusion_matrix.png)
 
 ### 📈 Training and Validation Curves
-![Training Curves](images/training_curves.png)
+![Training Curves](images/curves.png)
 
 ---
 
