@@ -3,6 +3,12 @@ import tensorflow as tf  # tf version == 2.13.0
 import cv2
 import RPi.GPIO as GPIO
 import time
+from settings import (
+    model_path, target_size, green_threshold, n_rows, n_cols,
+    speed, set_cause, disease_labels,
+    IR_PIN, IN1, IN2, IN3, IN4, EN1, EN2, S1, S2
+)
+
 
 # GPIO setup
 GPIO.setmode(GPIO.BCM)
@@ -44,33 +50,7 @@ pwm1.start(0)  # Initially off
 pwm2.start(0)
 
 # Load Model
-model_path = "/home/Ssg_K/fyp/tomato_model.h5"
 model = tf.keras.models.load_model(model_path)
-
-# Constants
-target_size = (224, 224)  # Model expects 224x224 images
-green_threshold = 0.05
-n_rows = 5
-n_cols = 5
-speed = 100
-
-# set the disease cause ('b' :bacterial, 
-#                        'f' :fungal,
-#                        'v' :viral 
-#                        'h' :healthy) 
-#which is to be treated with pesticide
-
-set_cause = 'v'
-
-# Disease labels
-disease_labels = [
-    "Bacterial Spot",
-    "Late Blight",
-    "Septoria Leaf Spot",
-    "Tomato Yellow Leaf Curl Virus",
-    "Tomato Mosaic Virus",
-    "Healthy"
-]
 
 def spray_pump():
     """Activates the sprayer for 1 second."""
