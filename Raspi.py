@@ -14,23 +14,6 @@ from settings import (
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)  # Avoid warnings on reruns
 
-# Pin Definitions
-IR_PIN = 14
-
-# Motor Control Pins
-IN1 = 5   # Motor A forward
-IN2 = 6   # Motor A backward
-IN3 = 19  # Motor B forward
-IN4 = 26  # Motor B backward
-
-# Enable pins for speed control (PWM)
-EN1 = 18  # Enable pin for Motor A (Speed)
-EN2 = 13  # Enable pin for Motor B (Speed)
-
-# Sprayer Pins
-S1 = 17
-S2 = 27
-
 # GPIO Configuration
 GPIO.setup(IR_PIN, GPIO.IN)
 
