@@ -3,6 +3,15 @@ import tensorflow as tf  # tf version == 2.13.0
 import cv2
 import RPi.GPIO as GPIO
 import time
+from utils_raspi import (
+    spray_pump,
+    forward,
+    stop,
+    capture_image,
+    classify_image,
+    find_cause
+)
+
 from settings import (
     model_path, target_size, green_threshold, n_rows, n_cols,
     speed, set_cause, disease_labels,
