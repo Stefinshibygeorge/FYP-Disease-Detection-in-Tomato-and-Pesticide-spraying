@@ -102,8 +102,7 @@ The overall structure of AgroBot is shown below:
 ### 🔁 Clone This Repository
 
 ```bash
-git clone https://github.com/yourusername/agrobot-disease-detector.git
-cd agrobot-disease-detector
+git clone https://github.com/Stefinshibygeorge/FYP-Disease-Detection-in-Tomato-and-Pesticide-spraying.git
 ```
 ---
 
