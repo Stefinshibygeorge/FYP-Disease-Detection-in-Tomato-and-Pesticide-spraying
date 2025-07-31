@@ -49,7 +49,7 @@ This repository contains the code, model, and design for a Raspberry Pi–based 
 ### 🧱 System Block Diagram
 The overall structure of AgroBot is shown below:
 
-![System Block Diagram](images/system_block_diagram.png)
+![System Block Diagram](images/block.png)
 
 ---
 
